@@ -5,7 +5,7 @@ contract MathFunction{
     uint8 num2;
     uint8 num3;
     
-    uint num;
+    int num;
     
 
     enum number_in_word {one,two,three,four,five}
@@ -27,7 +27,7 @@ contract MathFunction{
         num3 = _num3;
     }
 
-    function setNum(uint _num)public {
+    function setNum(int _num)public {
        num = _num;
     }
 

@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getDigit",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFindLargest",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSign",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_num",
+						"type": "int256"
+					}
+				],
+				"name": "setNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_num1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_num2",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_num3",
+						"type": "uint8"
+					}
+				],
+				"name": "setNumbers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Activities/MathFunction.sol": "MathFunction"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Activities/MathFunction.sol": {
+			"keccak256": "0x5c5926e1fa27c2e02d4a6e3b6650c0466a6e50084fe59265d23edc172e0dc1df",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af0f6f145d704ece8ba90482105cab2e44a50b6fe2de269d20e2d8a53bcf1a14",
+				"dweb:/ipfs/Qmf3Cxnf3n1Nz2H8xWds3TEbUb2HFaxGmgLjpECccjb7tj"
+			]
+		}
+	},
+	"version": 1
+}
