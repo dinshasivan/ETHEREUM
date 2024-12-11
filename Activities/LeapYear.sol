@@ -5,7 +5,6 @@ contract LeapYear{
     int count =0;
 
     function setYear(uint _year) public {
-        
         year = _year;
     }
     

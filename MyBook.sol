@@ -5,6 +5,7 @@ contract MyBook{
     uint16 public  price;
     address public  owner;
     bool public  sold;
+    
 
     function getBookDetails() public view returns (string memory,uint16){
         return (title,price);
@@ -27,10 +28,14 @@ contract MyBook{
 
             if(bal>0)
                 payable (msg.sender).transfer(bal);
+            payable (msg.sender).transfer(ethTowei(price));
             owner = msg.sender;
             sold = true;
-            
         }
+        else {
+            payable (msg.sender).transfer(ethTowei(price));
+        }
+            
     }
 }
 
