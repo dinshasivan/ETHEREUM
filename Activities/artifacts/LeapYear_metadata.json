@@ -6,19 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getLeapYear",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -26,9 +13,15 @@
 						"type": "uint256"
 					}
 				],
-				"name": "setYear",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "lapYear",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -60,11 +53,11 @@
 	},
 	"sources": {
 		"Activities/LeapYear.sol": {
-			"keccak256": "0xc5aa42ff5701cb4fe50158b07041f2648914bd1d4894831f52ea1fbf7c8e4025",
+			"keccak256": "0x3097b62912731bfa5765ac68d8ecb1c95157993cad29aedd79f0a56639261fd5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d8c86a71e1a35058628b9fb2e3fa69f1f2504b8946a88ec02bb9435ba8da7b93",
-				"dweb:/ipfs/QmNNXvyAujZi19cQKP6QSgno3hgRy7etUhAkGtQvgzepRJ"
+				"bzz-raw://4de9e4b5814d9a08582ea1cd0995caaf272fca5da661379c49485a93a92fe2ac",
+				"dweb:/ipfs/QmXEHUrEYuNYcGeBL6JARTimUufGQH8SFubg8of1H7wo9v"
 			]
 		}
 	},

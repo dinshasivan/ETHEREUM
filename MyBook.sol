@@ -28,7 +28,7 @@ contract MyBook{
 
             if(bal>0)
                 payable (msg.sender).transfer(bal);
-            payable (msg.sender).transfer(ethTowei(price));
+            // payable (msg.sender).transfer(ethTowei(price));
             owner = msg.sender;
             sold = true;
         }

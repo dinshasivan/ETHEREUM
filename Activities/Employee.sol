@@ -23,9 +23,19 @@ contract Employee{
         return (employe.name,employe.department,employe.designation,employe.salary);
     }
 
+    function ethTowei(uint eval) public pure returns (uint){
+        return (eval*1000000000000000000);
+    }
+
     function payEmployee() public  payable {
-        if(msg.value > employe.salary){
-            payable (employe.wallet).transfer(employe.salary);
+        if(msg.value >= ethTowei(employe.salary)){
+            uint bal = msg.value -ethTowei(employe.salary);
+
+            if(bal>0)
+                payable (msg.sender).transfer(bal);
+        }
+        else {
+            payable (msg.sender).transfer(ethTowei(employe.salary));
         }
     }
 }

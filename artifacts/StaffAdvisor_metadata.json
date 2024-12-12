@@ -151,6 +151,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalStudents",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -181,11 +194,11 @@
 	},
 	"sources": {
 		"StaffAdvisor.sol": {
-			"keccak256": "0x26a72c90e92801adf49d2dc9ca85cb0463434d98feb6416d8317020572d80840",
+			"keccak256": "0xad236e1cff5b6a604f1557193b7cdc0214e34236af1220f80fd4883c9cc8f464",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c51d540a1b99289be7a8fe4291adee2aecf2f5beda87ed3c0e4be28be0d8e214",
-				"dweb:/ipfs/QmZn6txeJVEhSAsijvuQbm64dcCM9Bdom9N6jVeqPahTTW"
+				"bzz-raw://cc8c3320f77cd1f3771340b622a85b8cde24bbb1b5b1fa592ae2b00c9045e718",
+				"dweb:/ipfs/QmaVrYh123TkuUmonzjgYte5FvCMDYggxtEQZYcV6Jpz8a"
 			]
 		}
 	},

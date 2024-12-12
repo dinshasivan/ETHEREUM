@@ -7,9 +7,35 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "buyBook",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "employe",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "department",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "designation",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "salary",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -33,8 +59,18 @@
 			},
 			{
 				"inputs": [],
-				"name": "getBookDetails",
+				"name": "getEmplyeeDetails",
 				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
 					{
 						"internalType": "string",
 						"name": "",
@@ -51,72 +87,37 @@
 			},
 			{
 				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "price",
-				"outputs": [
-					{
-						"internalType": "uint16",
-						"name": "",
-						"type": "uint16"
-					}
-				],
-				"stateMutability": "view",
+				"name": "payEmployee",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_title",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_depatment",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_designation",
 						"type": "string"
 					},
 					{
 						"internalType": "uint16",
-						"name": "_price",
+						"name": "_salary",
 						"type": "uint16"
 					}
 				],
-				"name": "setBook",
+				"name": "setEmployeeDetails",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sold",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "title",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -133,7 +134,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"MyBook.sol": "MyBook"
+			"Activities/Employee.sol": "Employee"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -147,12 +148,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"MyBook.sol": {
-			"keccak256": "0xc1eb2a053bdd988f706157db2badb589bf179b0e3f5d04caa502959ad0af6eda",
+		"Activities/Employee.sol": {
+			"keccak256": "0x04c91f68fb20c5fd02d132ee93e90fe738b9978845f105d77cf1b02269cbe3eb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dada54f583f87687a8785d2c3cac4c141b254999c5c44f9a6b3f0e82e8d21f0d",
-				"dweb:/ipfs/QmbtLiVcmsbnczhuS1q9tvEQsRKhUh782GvH3537Lqrxzm"
+				"bzz-raw://84e8144452612756ab668b8c3c06c611fe244b3a08eea30a16652ab6a76334cb",
+				"dweb:/ipfs/QmXbh6nQjr41MZU31RzQLWcDcUfiqiNVZizYZQ45j75uWb"
 			]
 		}
 	},

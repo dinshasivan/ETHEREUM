@@ -24,6 +24,14 @@ contract StaffAdvisor{
         _;
     }
 
+    modifier studentExist(uint _rollNo){
+        require((student[_rollNo].rollNo == _rollNo), "Student not present");
+        _;
+    }
+
+    function totalStudents() public view returns(uint) {
+        return (studentCount); 
+    }
 
     function setStudentDetails(string memory _name,uint _rollNo, string memory _dept, uint _sem, uint _cgpa) checkStaffAdvisor() public {
         student[_rollNo].rollNo = _rollNo;
@@ -36,15 +44,15 @@ contract StaffAdvisor{
         
     } 
 
-    function getStudentDetails(uint _rollNo) public view virtual  returns (uint,string memory,uint,string memory, uint){
+    function getStudentDetails(uint _rollNo) public view studentExist(_rollNo) returns (uint,string memory,uint,string memory, uint){
         
         return (student[_rollNo].rollNo,student[_rollNo].name,student[_rollNo].sem,student[_rollNo].dept,student[_rollNo].cgpa);
     }
 
-    function setNewname(uint _rollNo, string memory _newName) public {
+    function setNewname(uint _rollNo, string memory _newName) studentExist(_rollNo) public {
         student[_rollNo].rollNo = _rollNo;
         student[_rollNo].name = _newName;
-    }
+    } 
 }
 
 
