@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getStudentDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rollNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_dept",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_sem",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cgpa",
+						"type": "uint256"
+					}
+				],
+				"name": "setStudentDetails",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "student",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rollNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "dept",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sem",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cgpa",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "staffadvisor",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Student.sol": "Students"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Student.sol": {
+			"keccak256": "0x4e6a4984be9c47f6275be9f2e9323ffdbc026c34396976e671e22df6e8bc8eea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5d87147e7ca72d2ea04957f19e3a16dc6d23ce1c99bb0f4433b6443e708671bd",
+				"dweb:/ipfs/QmfQTQs1BzqTQnvcWdP21LYpmBSeFvFVfAYTLfQ4WVTk3M"
+			]
+		}
+	},
+	"version": 1
+}
