@@ -25,16 +25,17 @@ contract MyBook{
     function buyBook() public  payable {
         if(msg.value >= ethTowei(price)){
             uint bal = msg.value -ethTowei(price);
-
+            payable (owner).transfer(msg.value);
             if(bal>0)
                 payable (msg.sender).transfer(bal);
-            // payable (msg.sender).transfer(ethTowei(price));
+            
             owner = msg.sender;
             sold = true;
         }
         else {
-            payable (msg.sender).transfer(ethTowei(price));
+            payable (msg.sender).transfer(msg.value);
         }
+        
             
     }
 }

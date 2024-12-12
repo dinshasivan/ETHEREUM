@@ -148,11 +148,11 @@
 	},
 	"sources": {
 		"MyBook.sol": {
-			"keccak256": "0xc1eb2a053bdd988f706157db2badb589bf179b0e3f5d04caa502959ad0af6eda",
+			"keccak256": "0xbbf1a1fdf33642058202bcd3bc47d3818db091305f398567becff90d677188d2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dada54f583f87687a8785d2c3cac4c141b254999c5c44f9a6b3f0e82e8d21f0d",
-				"dweb:/ipfs/QmbtLiVcmsbnczhuS1q9tvEQsRKhUh782GvH3537Lqrxzm"
+				"bzz-raw://a1d53fdb30c719338324d99857dd201a1358f2fec863d40858b47d63e642ab5d",
+				"dweb:/ipfs/QmPU5xmkNYK4vPpHtsQuDsB3WGu5CZnj3UiU5gmVheVru2"
 			]
 		}
 	},
