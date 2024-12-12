@@ -31,7 +31,7 @@
 					},
 					{
 						"internalType": "address",
-						"name": "wallet",
+						"name": "cashier",
 						"type": "address"
 					}
 				],
@@ -149,11 +149,11 @@
 	},
 	"sources": {
 		"Activities/Employee.sol": {
-			"keccak256": "0x04c91f68fb20c5fd02d132ee93e90fe738b9978845f105d77cf1b02269cbe3eb",
+			"keccak256": "0xf1f1d9c420e68957885691d35a340cfa92e6e6e4eeaf38ce68773280e598fe8d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://84e8144452612756ab668b8c3c06c611fe244b3a08eea30a16652ab6a76334cb",
-				"dweb:/ipfs/QmXbh6nQjr41MZU31RzQLWcDcUfiqiNVZizYZQ45j75uWb"
+				"bzz-raw://28dc669f928dfeab74ffceb9eb56a713e355e1b154e2b66b0c4afbe4f2c8e024",
+				"dweb:/ipfs/Qmaob2QrWYNTyX5vq792cXpANym3qUJsHwoLhJzAC1pn3f"
 			]
 		}
 	},

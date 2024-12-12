@@ -18,6 +18,8 @@ contract MyBook{
         sold = false;
     }
 
+    
+
     function ethTowei(uint eval) public pure returns (uint){
         return (eval*1000000000000000000);
     }
@@ -34,9 +36,7 @@ contract MyBook{
         }
         else {
             payable (msg.sender).transfer(msg.value);
-        }
-        
-            
+        }    
     }
 }
 

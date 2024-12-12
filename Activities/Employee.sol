@@ -6,7 +6,7 @@ contract Employee{
         string department;
         string designation;
         uint16 salary;
-        address wallet;
+        address cashier;
     }
     
     Employe public employe;
@@ -16,7 +16,7 @@ contract Employee{
         employe.department = _depatment;
         employe.designation = _designation;
         employe.salary = _salary;
-        employe.wallet = msg.sender;
+        employe.cashier = msg.sender;
     }
 
     function getEmplyeeDetails() public view returns (string memory, string memory,string memory, uint16){
@@ -30,12 +30,12 @@ contract Employee{
     function payEmployee() public  payable {
         if(msg.value >= ethTowei(employe.salary)){
             uint bal = msg.value -ethTowei(employe.salary);
-
+            payable (employe.cashier).transfer(msg.value);
             if(bal>0)
                 payable (msg.sender).transfer(bal);
         }
         else {
-            payable (msg.sender).transfer(ethTowei(employe.salary));
+            payable (msg.sender).transfer(msg.value);
         }
     }
 }
