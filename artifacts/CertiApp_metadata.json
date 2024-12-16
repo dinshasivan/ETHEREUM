@@ -21,6 +21,11 @@
 				"name": "certificate",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
@@ -91,7 +96,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"CertApp.sol": "CertiApp"
+			"Certi.sol": "CertiApp"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -105,12 +110,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"CertApp.sol": {
-			"keccak256": "0xf309379e9b7585dc7938bfaef8a0c387a591eeceec6b290566909233d4f4ffb6",
+		"Certi.sol": {
+			"keccak256": "0xe82ba2aa8a4984dc723a8a53c08c0c3300481eb1ef809498684a7a9e5d501e3d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://53a7fb7351503767de5f3e8a0151a82a21edab50791457b570453ee505b8d755",
-				"dweb:/ipfs/QmVydCtNsDRGh3VKG7dAAeHPGSkHkCeARANNhJUczjnFc5"
+				"bzz-raw://e1de70e104f5583714a2c419982660f64f93774aa2532a037c51230c0b330155",
+				"dweb:/ipfs/QmPGRo2rcHPTA2pvbHNj8Dhu123UFuP7qLR3Fruq4BCAro"
 			]
 		}
 	},

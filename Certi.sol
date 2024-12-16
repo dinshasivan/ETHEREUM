@@ -2,10 +2,12 @@
 pragma solidity 0.8.28;
 contract CertiApp{
     struct Certificate{
+        uint id;
         string name;
         string course;
         string grade;
         string date;
+        
     }
 
     address admin;
@@ -22,7 +24,7 @@ contract CertiApp{
     }
 
     function issueCertificate(uint _id,string memory _name,string memory _course, string memory _grade, string memory _date) public onlyAdmin {
-        // require(certificate[_id]==_id,"already issue");
-        certificate[_id] = Certificate(_name,_course,_grade,_date);
+       require((certificate[_id].id == _id),"already issue");
+        certificate[_id] = Certificate(_id,_name,_course,_grade,_date);
     }
 }
